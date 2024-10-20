@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Homework.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="title-box">
+        <h1>Homework Classifier</h1>
+        <input type="text" id="homework-input" placeholder="Enter homework ">
+        <button id="add-homework" class="btn"  onclick="addHomework()">Add Homework</button>
+    </div>
+
+    <div class="all">
+        <div class="columns">
+            <div class="column pending">
+                <h2>Pending</h2>
+                <ul id="pending-list">
+    
+                </ul>
+            </div>
+            <div class="column doing">
+                <h2>Doing</h2>
+                <ul id="doing-list"></ul>
+            </div>
+            <div class="column completed">
+                <h2>Completed</h2>
+                <ul id="completed-list"></ul>
+            </div>
+        </div>
+        <button class="btn" id="delete-all">Delete All Tasks</button>
+    </div>
+    <script src="homework.js"></script>
+    
+</body>
+</html>
